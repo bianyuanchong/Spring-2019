@@ -1,5 +1,5 @@
 module Hw where
-import Prelude(Show, undefined)
+import Prelude(Show, Eq, undefined)
 
 -- HOMEWORK ONE     Due 2/5 by 11:59pm by upload to your repo
 --    (with a couple of hours "grace period" before it is considered late)
@@ -124,7 +124,7 @@ max _ _  = undefined
 -- C.1: Dates
 
 -- Write a data type for the 7 days of the week
-data DayOfWeek -- = ...  deriving Show
+data DayOfWeek -- = ...  deriving (Show, Eq)
 
 -- what is your favorite Day? (Your choice!)
 favoriteDay :: DayOfWeek
@@ -139,7 +139,7 @@ nextDay :: DayOfWeek -> DayOfWeek
 nextDay  _     = undefined
 
 -- write a data type for the Months of the year
-data Month -- = ...  deriving Show
+data Month -- = ...  deriving (Show, Eq)
 
 -- In which month is your birthday?
 partyMonth :: Month
